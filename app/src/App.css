@@ -32,7 +32,28 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0;
+  gap: 20px;
+  width: 100%;
+}
+
+.button-container>button {
+  margin: 5px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  color: #61dafb;
+  background-color: #282c34;
 }
