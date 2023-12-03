@@ -1,0 +1,7 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/login
+###
+GET http://localhost:3000/logout
+###
+GET http://localhost:3000/user
