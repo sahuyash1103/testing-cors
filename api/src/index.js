@@ -3,13 +3,16 @@ const app = express();
 const cors = require('cors');
 const expressSession = require('express-session');
 const passport = require('passport');
+require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
     credentials: true,
-    origin: "http://localhost:3001",
+    origin: ["http://localhost:3001", process.env.CLIENT_URL],
 }
+
+console.log(process.env.CLIENT_URL)
 
 app.use(cors(corsOptions));
 app.use(express.json());
